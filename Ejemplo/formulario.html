@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<form action="dos.php" method="POST"  ENCTYPE="multipart/form-data"
+>
+	Edad: 
+	<input type="text" name="edad">
+	<br>
+
+	Sexo:
+	<input type="radio" name="sexo" value="F" checked>Mujer
+	<input type="radio" name="sexo" value="M" checked>Hombre
+	<br>
+
+	Extras:
+	<input type="checkbox" name="extras[]" value="garaje" checked>Garaje
+	<input TYPE="checkbox" NAME="extras[]" VALUE="piscina">Piscina
+	<input TYPE="checkbox" NAME="extras[]" VALUE="jardin">Jardín
+
+	<br>
+
+	Colores:
+	<SELECT NAME="color">
+ 		<OPTION VALUE="rojo" SELECTED>Rojo
+ 		<OPTION VALUE="verde">Verde
+ 		<OPTION VALUE="azul">Azul
+	</SELECT>
+	
+	<br>
+
+	Idiomas:
+	<SELECT MULTIPLE SIZE="3" NAME="idiomas[]">
+ 		<OPTION VALUE="ingles" SELECTED>Inglés
+ 		<OPTION VALUE="frances">Francés
+ 		<OPTION VALUE="aleman">Alemán
+	 	<OPTION VALUE="holandes">Holandés
+	</SELECT>
+	
+	<br>
+
+	<input type="FILE" name="fileToUpload">
+	<br>
+
+	<!--<input type="button" name="actualizar" value="actualizar datos">-->
+	<input type="submit" name="enviar" value="enviar">
+</form>
+
+</body>
+</html>
